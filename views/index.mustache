@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title></title>
+</head>
+    
+
+<body>
+    <div class="header">
+    <h1>Trip Booker</h1>
+    <form action="/add-trip" method="POST">
+        <input name="destination" type="text" placeholder="destination">
+        <input name="departureDate" type="date" placeholder="departure date">
+        <input name="returnDate" type="date" placeholder="return date">
+        <input name="postURL" type="text">
+        <button type="submit">Submit Trip</button>
+    </form>
+    </div>
+
+    
+    
+{{#trips}}
+<ul>
+<img src="{{postURL}}"/>
+    <li><h4>Destination:</h4> {{destination}}</li>
+    <li><h4>Departure Date:</h4> {{departureDate}}</li>
+    <li><h4>Return Date:</h4> {{returnDate}}</li>
+</ul>
+{{/trips}}   
+    
+    
+    
+
+    
+    
+</body>
+</html>

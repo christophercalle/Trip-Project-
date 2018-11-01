@@ -1,0 +1,13 @@
+body{
+    background-color: darkseagreen;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+li {
+    list-style: none;
+}
+
+.header {
+    margin-left: 50%;
+}
